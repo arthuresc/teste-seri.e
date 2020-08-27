@@ -1,0 +1,71 @@
+/* Coloque o CSS neste arquivo */
+/* font-family: 'Montserrat', sans-serif; */
+body{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    min-width: 520px;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+}
+header{
+    width: auto;
+    max-height: 165px;
+    flex: 1 1 1170px;
+    background-color: #f6f7d9;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+header .topnav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+header .topnav .search{
+    border: solid 1px #7f7f7f;
+    width: 198px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .topnav .search .search-img{
+    width: 15px;
+    margin: 0 0 0 5px;
+}
+header .topnav .search .search-bar{
+    color: #1f1f1f;
+}
+.logo-txt{
+    display: none;
+}
+.icons-topnav{
+    width: 30px;
+    max-height: 25px;
+}
+header .menu .menu-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width: 520px) {
+
+}
+@media only screen and (min-width: 520px) {
+
+}
+@media only screen and (min-width: 768px) {
+
+}
+@media only screen and (min-width: 1024px) {
+
+}
+@media only screen and (min-width: 1170px) {
+
+}
