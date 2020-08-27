@@ -19,6 +19,7 @@ header{
     display: inline-flex;
     flex-flow: column;
     justify-content: space-between;
+    padding: 30px 0 0 0;
 }
 header .topnav{
     display: flex;
@@ -48,22 +49,30 @@ header .topnav .search .search-img{
 header .topnav .search .search-bar{
     color: #1f1f1f;
 }
+header .topnav .logo{
+    transform: translateX(-25%);
+}
 header .topnav .user-options{
-
+    display: flex;
+    flex-direction: row;
 }
 header .topnav .user-options .cart{
-    position: relative;
+
+}
+header .topnav .user-options .cart .cart-icon{
+
 }
 header .topnav .user-options .cart .number-cart{
-    position: absolute;
-    right: -10px;
-    top: -20px;
+    width: 1em;
+    height: 1em;
     background-color: #ffa200;
     color: #fff;
     font-size: 0.8em;
     padding: 5px;
     border-radius: 100%;
-
+}
+header .menu{
+    justify-self: self-end !important;
 }
 header .menu .menu-nav{
     display: flex;
