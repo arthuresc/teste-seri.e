@@ -16,15 +16,22 @@ header{
     max-height: 165px;
     flex: 1 1 1170px;
     background-color: #f6f7d9;
-    display: flex;
-    flex-flow: column wrap;
+    display: inline-flex;
+    flex-flow: column;
     justify-content: space-between;
 }
 header .topnav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0;
+}
+.logo-txt{
+    display: none;
+}
+.icons-topnav{
+    width: 30px;
+    max-height: 25px;
 }
 header .topnav .search{
     border: solid 1px #7f7f7f;
@@ -41,23 +48,42 @@ header .topnav .search .search-img{
 header .topnav .search .search-bar{
     color: #1f1f1f;
 }
-.logo-txt{
-    display: none;
+header .topnav .user-options{
+
 }
-.icons-topnav{
-    width: 30px;
-    max-height: 25px;
+header .topnav .user-options .cart{
+    position: relative;
+}
+header .topnav .user-options .cart .number-cart{
+    position: absolute;
+    right: -10px;
+    top: -20px;
+    background-color: #ffa200;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 100%;
+
 }
 header .menu .menu-nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #8158c5;
+    color: #fff;
+    line-height: 50px;
 }
+
+
+
 @media only screen and (max-width: 520px) {
 
 }
 @media only screen and (min-width: 520px) {
+            body{
+                background-color: lavenderblush;
+            }
 
 }
 @media only screen and (min-width: 768px) {
