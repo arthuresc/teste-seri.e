@@ -25,7 +25,7 @@ header .topnav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 0 30px;
 }
 .logo-txt{
     display: none;
@@ -55,21 +55,24 @@ header .topnav .logo{
 header .topnav .user-options{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 header .topnav .user-options .cart{
-
+    display: flex;
+    align-items: center;
 }
 header .topnav .user-options .cart .cart-icon{
 
 }
 header .topnav .user-options .cart .number-cart{
-    width: 1em;
-    height: 1em;
     background-color: #ffa200;
     color: #fff;
-    font-size: 0.8em;
-    padding: 5px;
-    border-radius: 100%;
+    font-size: 0.6em;
+    padding: 0.6em;
+    border-radius: 54%;
+    position: relative;
+    top: -10px;
+    right: 10px;
 }
 header .menu{
     justify-self: self-end !important;
@@ -83,8 +86,17 @@ header .menu .menu-nav{
     color: #fff;
     line-height: 50px;
 }
-
-
+header .menu .menu-nav .item-nav{
+    padding: 0 30px;
+    cursor: pointer;
+    -webkit-user-select: none;  
+    -moz-user-select: none;     
+    -ms-user-select: none;      
+    user-select: none;          /* Para que não seja selecionado o texto acidentalmente na hora de navegar */
+}
+header .menu .menu-nav .item-nav:hover{
+    background-color: #623ba1;
+}
 
 @media only screen and (max-width: 520px) {
 
