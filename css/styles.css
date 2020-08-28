@@ -12,11 +12,41 @@ body{
     margin: auto;
 
 }
+.sub-title{
+    font-size: 24pt;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    margin: 40px !important;    
+}
+.title-product,.price,.special-price, .sub-title, .descount-price{
+    color: #7f7f7f;
+    text-align: center;
+    margin: 0 10px;
+}
+.price{
+    font-size: 1em;
+    font-family: 'Montserrat Medium', sans-serif;  
+    margin: 8px 0;  
+}
+.title-product,.special-price{
+    font-size: 1em;
+    font-family: 'Montserrat Light', sans-serif;    
+}
+.special-price{
+    font-size: 0.7em;
+}
+.descount-price{
+    font-size: 0.7em;
+    font-family: 'Montserrat Light', sans-serif;    
+    text-decoration: line-through;    
+}
+.title-product{
+    margin-top: 15px;
+}
 header{
     width: 100vw;
     height: 165px;
     /* flex: 1 1 1170px; */
-    background-color: #f6f7d9;
+    /* background-color: #f6f7d9; */
     display: inline-flex;
     flex-flow: column;
     justify-content: space-between;
@@ -107,6 +137,7 @@ header .menu .menu-nav .item-nav:hover{
 }
 main{
     display: flex;
+    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
 }
@@ -161,8 +192,23 @@ main .categories .cat-img{
     height: 100px;
     object-fit: cover;
 }
-main #content-main {
-    
+main #content-main .products-carousel {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+main #content-main .products-carousel .product{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+main #content-main .product > img{
+    max-width: 100%;
+    display: block;
+    fill-opacity: ;
 }
 @media only screen and (max-width: 520px) {
 
