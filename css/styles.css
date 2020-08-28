@@ -8,24 +8,26 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: auto;
 
 }
 header{
-    width: auto;
-    max-height: 165px;
-    flex: 1 1 1170px;
+    width: 100vw;
+    height: 165px;
+    /* flex: 1 1 1170px; */
     background-color: #f6f7d9;
     display: inline-flex;
     flex-flow: column;
     justify-content: space-between;
-    padding: 30px 0 0 0;
+    align-items: center;
 }
 header .topnav{
-    display: flex;
+    width: 1170px;   /*  Arrumar no breakpoint */
+    display: inline-flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
+    /* align-items: center; */
+    padding: 20px 30px;
 }
 .logo-txt{
     display: none;
@@ -75,19 +77,24 @@ header .topnav .user-options .cart .number-cart{
     right: 10px;
 }
 header .menu{
-    justify-self: self-end !important;
+    /* justify-self: self-end !important; */
+    width: 100vw;
+    background-color: #8158c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header .menu .menu-nav{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #8158c5;
     color: #fff;
     line-height: 50px;
+    max-width: 1170px !important;
 }
 header .menu .menu-nav .item-nav{
-    padding: 0 30px;
+    padding: 0 50px;
     cursor: pointer;
     -webkit-user-select: none;  
     -moz-user-select: none;     
@@ -95,9 +102,68 @@ header .menu .menu-nav .item-nav{
     user-select: none;          /* Para que não seja selecionado o texto acidentalmente na hora de navegar */
 }
 header .menu .menu-nav .item-nav:hover{
-    background-color: #623ba1;
+    background-color: #ffa200;
+    color: #8158c5;
 }
-
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main #top-main{
+    background-color: #ffa200;
+    height: 636px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .slider{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .slider .controllers-slider{
+    position: relative;
+    width: 1170px;
+    z-index: 2;
+    top: -280px;
+}
+main .slider .controllers-slider .icon-slider-next{
+    position: absolute;
+    width: 50px;
+    padding: 10px;
+    right: 0;
+    cursor: pointer;
+}
+main .slider .controllers-slider .icon-slider-previous{
+    position: absolute; 
+    width: 50px;
+    padding: 10px;
+    left: 0;
+    cursor: pointer;
+}
+main .slider .slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .categories{
+    height: 136px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .categories .cat-img{
+    width: 378px;
+    height: 100px;
+    object-fit: cover;
+}
+main #content-main {
+    
+}
 @media only screen and (max-width: 520px) {
 
 }
